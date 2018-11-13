@@ -1,0 +1,46 @@
+html,
+body,
+.view{
+	height: 100% ;
+	color: #fff;
+	
+}
+.view{
+	height: 1000px ;
+}
+@media (max-width: 740px){
+	.full-page-intro {
+		height: 1000px;
+	}
+}
+
+.navbar
+{
+	background-color: rgba(0,0,0,0.3);
+}
+.top-nav-collapse{
+	background-color: #1C2331;
+}
+@media only screen and (max-width: 768px){
+	.navbar{
+		background-color: #f00;
+	}
+}
+
+.page-footer{
+	background-color:#1C2331;
+}
+
+@media (max-width: 740px){
+	html,
+	body,
+	header,
+	.view{
+		height: 1000px;
+	}
+}
+.fa-book:hover,.fa-code:hover,.fa-graduation-cap:hover {
+  color:(0,255,9,9);
+ 
+  margin-left: 4px;
+}

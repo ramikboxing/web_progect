@@ -1,0 +1,486 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+section{
+	width: 100%;
+}
+a{
+	text-decoration:none;
+}
+.menu-btn{
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	border-radius: 50%;
+	position: relative;
+}
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after{
+	position: absolute;
+	top:50%; margin-top: -1px;
+	left: 50%;margin-left: -10px;
+	width: 20px;
+	height: 2px;
+	background-color: #222;
+}
+.menu-btn span::before,
+.menu-btn span::after {
+	content:'';
+	display: block;
+	transition: 0.2s;
+}
+.menu-btn span::before {
+ 	transform: translateY(-5px);
+}.menu-btn span::after{
+ 	transform: translateY(5px);
+}
+.menu-btn_active span:before {
+  	transform: translateX(10px) rotate(45deg);
+ 	transform-origin: right bottom;
+ 	width: 10px;
+}
+.menu-btn_active span:after {
+  	transform: translateX(10px) rotate(-45deg);
+    transform-origin: right top;
+    width: 10px;
+}
+.menu-block{
+	/*outline: 1px solid #0f0;*/
+	display: flex;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height:50px;
+	background-color : rgba(0,0,0,0.5); 
+	z-index: 1;
+
+}
+.menu-nav_link{
+	display: inline-block;
+	text-decoration:none;
+	color:#fff; 
+	margin-right: 20px; 
+}
+.menu-nav{
+	position: relative;
+	top: 15px;
+	left: 30px;
+	transition: 0.5s;
+	transform-origin: left center;
+	transform: scaleX(0) translateX(20%);
+	opacity: 0;
+}
+.menu-nav_active {
+	transform: scaleX(1) translateX(0%);
+	opacity:1;
+}
+.menu-nav a:hover{
+	color: #000;
+}
+ul li {
+	list-style: none;
+	position: absolute;	
+}
+#container{
+	/*width: 100%;*/
+	/*background: #ddd;*/
+}
+#container section {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	font-size: 16px;
+}
+#container section  h2{
+	position: relative;
+	top: 50px;
+}
+#start{
+	background: url("../../image/pure1.jpg") 100% no-repeat;
+	background-size: cover;
+	color: #ffd;
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+}
+#start h1{
+	margin-top: 50px;
+	margin-left: 45%;
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+}
+#start header{
+	max-width: 70%;
+	margin-left: 15%;
+	font-size: 25px;
+}
+#start main .block2{
+position: relative;
+top: 30px;
+left: 100px;
+width: 50%;
+font-size: 25px;
+}
+#start main .block3{
+	width: 100px;
+	position: absolute;
+	top: 240px;
+	left: 80%;
+}
+#start .advertising {
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	bottom: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+#start .advertising .advantages_item h2{
+	position: relative;
+	top: 0;
+	display: flex;
+	justify-content: center;
+}
+#start .advertising .advantages_item .image {
+	display: flex;
+	justify-content: center;
+}
+#assembler{
+	background: url("../../image/37533.jpg") no-repeat;
+	background-size: cover;
+	color: #ffd;
+}
+#assembler .wrap {
+	position: absolute;
+	width: 100%;
+	display: flex;	
+}
+#assembler .card{
+	width: 400px;
+	height: 300px;
+	position: relative;
+	top: 15px;
+	left: 0;
+	perspective: 1000px;
+}
+#assembler .front, .back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center; /* Расположение горизонтали по середине*/ 
+	align-items: center; /* Расположение вертикали по середине*/
+	transition: 1s;
+	backface-visibility: hidden;
+}
+#assembler .front{
+	background-size: cover; /* Масштабируем фон */
+}
+#assembler .front .text{
+	font-family: 'Joti One', sans-serif;
+	position: absolute;
+	top:45%;
+	left: 25px;
+	color: #500;
+	font-size: 18px;
+	animation: rotate 5s linear infinite;
+ } 
+@keyframes rotate {
+  0% 100% {
+    transform: scaleY(1.2);
+  }
+  50% {
+    transform: scaleY(1.5);  
+  }
+}
+
+#assembler .back{
+	transform: rotateY(180deg);
+	background-size: cover; /* Масштабируем фон */
+}
+#assembler .card:hover .front {transform: rotateY(180deg);}
+#assembler .card:hover .back {transform: rotateY(360deg);}
+
+#assembler .wrap .text2 {
+	color: #ddd;
+	width: 100%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+}
+#assembler .sintax {
+	position: absolute;
+	bottom: 20%;
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+#assembler .sintax .cards{
+	position: relative;
+	perspective: 1000px;
+	width: 33.33%;
+	height: 100%;
+	font-family: 'Khand', sans-serif;
+} 
+#assembler .sintax .cards h2{
+	position: relative;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	font-family: 'Oswald', sans-serif;
+	color: #bbb;
+}
+
+#assembler .sintax .cards p{
+	position: relative;
+	left: 100px;
+	color: grey;
+}
+#assembler .sintax .cards strong{
+	color:#6707FE;
+}
+#assembler .sintax .cards b{
+	color: #bbb;
+}
+#assembler .sintax .cards .ASM,.CI {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: 1s;
+	backface-visibility: hidden;
+	border-radius: 10px;
+}
+#assembler .sintax .CI{
+	transform: rotateY(180deg);
+}
+#assembler .sintax .cards:hover .ASM { transform: rotateY(180deg);   }
+#assembler .sintax .cards:hover   .CI { transform: rotateY(360deg);  }
+
+#assembler .videofile {
+	position: absolute;
+	bottom: 0.1%;
+	width: 100%;
+	/*outline: 1px solid #ff0;*/
+}
+#assembler .videofile .video{
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	width: 100%;
+}
+#assembler .videofile .text{
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	width: 100%;
+	font-family: 'Caveat' , sans-serif;
+	font-size: 40px;
+}
+#fortan{
+	background: url("../../image/42753.jpg") no-repeat;
+	background-size: cover;
+	color: #ffd
+}
+#fortan header{
+	/*outline: 1px solid #ff0;*/
+	width: 100%;
+	color:#000;
+	font-family: 'Mali', sans-serif;
+}
+#fortan header p{
+	animation: textcolor 8s linear infinite;
+}
+@keyframes textcolor {
+  0% 100% {
+    color: rgb(0,0,0);
+  }
+  50% {
+    color: rgb(255,255,255);  
+  }
+}
+#fortan header p:hover{
+	animation-play-state: paused;
+}
+#fortan main{
+	/*outline: 1px solid #000;*/
+	width: 100%;
+	height: 700px;
+}
+#fortan main .h3{
+	/*outline: 1px solid #ff0;*/
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+#fortan main .fortanversion{
+	display: flex;
+	justify-content: center;
+}
+#fortan main .fortanversion .a {
+	width: 250px;
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+	font-family: 'Patrick Hand', sans-serif;
+}
+#fortan main .fortanversion a:hover{
+	color: #000;
+} 
+#fortan main .fortanversion a {
+	text-decoration:none;
+	color: #fff;	
+}
+#fortan main .monitor{
+	display: flex;
+	justify-content: center;
+	height: 650px;
+}
+#fortan main .monitor section {
+	width: 80%;
+	min-height: 350px;
+	background: linear-gradient(-45deg, #00a, #000);
+}
+/*#fortan main .monitor .display*/ .f66, .f77, .f90, .f95, .f2003, .f2008 {
+	position: absolute;
+	top: 0%;
+	left: 0;
+	transform: rotateX(90deg);
+	opacity: 0;
+	color: #ff0;	
+}
+
+#pascal{
+	background: url("../../image/26072.jpg") no-repeat;
+	background-size: cover;
+	color: #ffd
+
+}
+#pascal header{
+
+}
+#pascal header p{
+	
+}
+#pascal main{
+	display: flex;
+
+}
+#pascal main .block1{
+	width: 25%;
+	height: 500px;
+	outline: 1px solid #ff0;
+}
+#c{
+	background: url("../../image/35427.jpg") no-repeat;
+	background-size: cover;
+	color: #ffd
+}
+#c header{
+	display: flex;
+	justify-content: center;
+	height: 300px;
+}
+#c header .C_text{
+	/*outline: 1px solid #ff0;*/
+	width: 80%;
+	color: #ff0;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	/*height: 200px;*/
+}
+#c header .C_img{
+	background: url("../../image/c.jpeg") no-repeat;
+	background-size: cover;
+	width: 20%;
+	/*height: 200px;*/
+}
+#c main{
+	outline: 1px solid #ff0;
+}
+
+footer{
+	width: 100%;
+	height: auto;
+	background: #000;
+	margin:0 auto;
+	text-align: center;
+	padding-top: 25px;
+}
+footer a {
+	color: #fff;
+	font-size: 14px;
+	margin-left: 10px;
+
+}
+footer nav a:hover{
+	border-bottom: 1px solid white;
+}
+.logo img {
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+}
+
+
+.social img {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.social img:hover{
+	background: #494949;
+	border-radius: 50%; 
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px){
+	
+	.advertising {
+		display: none;
+	}
+	.advantages_item{
+		display: none;
+	}
+	.sintax{
+		display: none;
+	}
+
+	#container section {
+	min-height: 180vh;
+	font-size: 14px;
+
+	}
+	/*#fortan main .monitor .display*/.f90 {
+	background: linear-gradient(-45deg, #00f, #000);
+	}
+}
+@media screen and (max-width: 434px){
+	.menu-block{
+		display: none;
+	}
+	
+	#container section {
+	min-height: 200vh;
+	font-size: 14px;
+}
+	
+}

@@ -1,0 +1,174 @@
+body,html{
+	padding: 0;
+	margin: 0; 
+	
+}
+
+#particles-js { /*Задний фон*/
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	z-index: 1;
+ 	background-color: #A60C00;
+  	background-image: url('');
+ 	background-size: cover;
+  	background-position: 50% 50%;
+  	background-repeat: no-repeat;
+}
+#section{   /*Основа сайта*/
+	position: relative;
+	z-index: 2;
+	width: 1000px;
+	height: auto;
+	background-color: #fff ;	
+	margin: 0 auto ;
+
+}
+header{
+	width: 100%;
+	height: 200px;
+	background-color: #aff;
+	margin:20px 0 0 0;
+	border: 1px solid black;
+}
+center{
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	margin:20px 0 0 0;
+	
+}
+
+page{
+	display: block; /*Иначе тег page не увидим*/
+	width: 100%-30px;
+	height: 500px-30px;
+	background-color: #53699F;
+	padding: 30px;
+	text-align: left;
+	
+}
+page p{ /*Текст */
+	color: #fff;
+	font-size: 25px;
+}
+p{
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 30px;
+	padding: 30px;	
+}
+news{   /*Схема языков программирования*/
+	display: block; /*Иначе тег news не увидим*/
+	width: 100%;
+	height: 500px;
+	background-color: #304884;
+	margin:25px 0 0 0;
+}
+news h2{
+	padding: 20px;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 35px;
+}
+ news button{
+	margin: 25px 0 0 0;
+	font-size: 20px;
+	color:#fff;
+	background-color: #556BA2;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+	/*Кнопки*/
+
+.Declarative_languages{    /*Декларативные языки программирования*/
+	margin-right: 125px;
+	transform-origin: right; 
+	transition: 0.5s;
+	transform: scaleX(0) translateY(-40px);
+}
+.Imperative_languages{ 	/*Императивные языки программирования*/
+	transition: 0.5s;
+	transform-origin: left; 
+	transform: scaleX(0) translateY(-40px);	
+}
+.Declarative_languages_active{	/*Декларативные языки программирования*/
+	transition: 0.5s;	
+	transform: scaleX(1) translateZ(40px);
+	opacity:1;
+}
+.Imperative_languages_active{	/*Императивные языки программирования*/	
+	transition: 0.3s;	
+	transform: scaleX(1) translateZ(-40px);
+	opacity:1;
+}
+.Procedural_languages{ 		/*Процедурно ориентированные языки программирования*/
+	transition: 0.3s;
+	transform-origin: center; 
+	transform: scaleX(0) translateY(-45px);
+}
+.LPDOOP{		/*Объектно ориентированные языки программирования*/
+	transition: 0.3s;
+	transform-origin: center; 
+	transform: scaleX(0) translateY(-150px);
+}
+.Procedural_languages_active{	/*Процедурно ориентированные языки программирования*/
+	transition: 0.3s;
+	transform: scaleX(1) translateX(-220px);
+	opacity:1;	
+}
+.LPDOOP_active{	/*Объектно ориентированные языки программирования*/
+	transition: 0.3s;
+	transform: scaleX(1) translateX(-240px);	
+	opacity:1;
+}
+.LPIF{			/*Функциональные*/
+	transition: 0.3s;
+	transform-origin: left; 
+	transform: scaleX(0) translateY(-50px);
+}
+.LPIL{			/*Логические*/
+	transition: 0.3s;
+	transform-origin: left; 
+	transform: scaleX(0) translateY(-40px);
+}
+.LPIF_active{	/*Функциональные*/
+	transition: 0.3s;
+	transform: scaleX(1) translateX(100px);
+	opacity:1;	
+}
+.LPIL_active{	/*Логические*/
+	transition: 0.3s;
+	transform: scaleX(1) translateX(90px);	
+	opacity:1;
+}
+
+.PI{  /**/
+	width: 1000px;
+	height: auto;
+	background-color: #4B54C9;
+	margin-top: 25px;
+	float:right; /*расположить все справа*/	
+	transform: scaleY(1);
+}
+.PD{
+	width: 1000px;
+	height: auto;
+	background-color: #0F4FEF;
+	margin-top: 25px;
+	float:left;	/*расположить все слева*/
+	transform: scaleY(1);	
+}
+
+footer{
+	width: 100%;
+	height: 200px;
+	background-color: #3F4592;
+	margin-top: 25px;
+}
+footer p {
+	
+}
