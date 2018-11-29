@@ -64,7 +64,7 @@ body {
 }
 
 header .logo{
-	background: #000 ;
+	background: #5E7D90 ;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -100,8 +100,32 @@ header nav .topnav a{
 header nav .topnav .icon{
 	display: none;
 }
-section {
+main {
+	background: url("../../image/Abtsract Tunnel_7themes-su.jpg");
+}
+main #perehod{
+	
+}
+main #example {
+	color: #fff;
+	margin: 5px 20px;
+}
+main section {
+	color: #fff;
+	/*display: flex;
+	justify-content: center;*/
 	min-height: 100vh;
 	border-bottom: #ccc 1px solid; 
+	margin: 0px 40px;
 }
 
+
+#example{padding:0px 0px 0px 100px;display:none;}
+#example .new{opacity: 0;}
+#example .div_opacity{
+  -webkit-transition: opacity .1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -ms-transition: opacity .1s ease-in-out;
+  -o-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
+  opacity: 1;}
