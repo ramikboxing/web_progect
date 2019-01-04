@@ -238,23 +238,23 @@ center .PD,.PI {
 	border-radius: 10px;
 }
 	/*Кнопки*/
-.Declarative_languages{    /*Декларативные языки программирования*/
+.imper_languages{    /*Декларативные языки программирования*/
 	margin-right: 125px;
 	transform-origin: right; 
 	transition: 0.5s;
 	transform: scaleX(0) translateY(-40px);
 }
-.Imperative_languages{ 	/*Императивные языки программирования*/
+.declar_languages{ 	/*Императивные языки программирования*/
 	transition: 0.5s;
 	transform-origin: left; 
 	transform: scaleX(0) translateY(-40px);	
 }
-.Declarative_languages_active{	/*Декларативные языки программирования*/
+.imper_languages_active{	/*Декларативные языки программирования*/
 	transition: 0.5s;	
 	transform: scaleX(1) translateZ(40px);
 	opacity:1;
 }
-.Imperative_languages_active{	/*Императивные языки программирования*/	
+.declar_languages_active{	/*Императивные языки программирования*/	
 	transition: 0.3s;	
 	transform: scaleX(1) translateZ(-40px);
 	opacity:1;
