@@ -67,7 +67,7 @@ body{
 	background-color : rgba(0,0,0,0.5); 
 	position: relative;
 	top: 80px;
-	left: 180px;
+	left: 90px;
 	top: -9999em;
 	opacity: 0;
 	transition: 0.1s;
